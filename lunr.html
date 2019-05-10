@@ -1,0 +1,60 @@
+﻿<script src="elasticlunr.min.js"></script>
+
+
+
+
+
+
+<script>
+var documents = [{
+"id": 1,
+  "name": "青龙湖",
+  "text": "最大的湿地公园"
+}, {
+"id": 2,
+  "name": "桂溪公园",
+  "text": "最长的橡胶跑道."
+}, {
+"id": 3,
+  "name": "天府广场",
+  "text": "最受欢迎的地方"
+}]
+
+var index = elasticlunr(function () {
+    this.addField('title');
+    this.addField('body');
+	
+	
+    this.setRef('id');
+});
+
+//for(var i = 0;i<documents.length ;i++){
+//	index.addDoc(documents[i]);
+//}
+
+
+
+var doc1 = {
+    "id": 1,
+    "title": "Oracle released its latest database Oracle 12g",
+    "body": "Yesterday Oracle has released its new database Oracle 12g, this would make more money for this company and lead to a nice profit report of annual year."
+}
+
+var doc2 = {
+    "id": 2,
+    "title": "Oracle released its profit report of 2015",
+    "body": "As expected, Oracle released its profit report of 2015, during the good sales of database and hardware, Oracle's profit of 2015 reached 12.5 Billion."
+}
+
+
+var doc3 = {
+    "id": 3,
+    "title": "春熙路",
+    "body": "最受欢迎的地方"
+}
+
+index.addDoc(doc1);
+index.addDoc(doc2);
+index.addDoc(doc3);
+
+</script>

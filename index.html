@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>地图显示</title>
+    <style>
+        html,
+        body,
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <header class="row">
+        <span class="logo col-sm-3 col-md">mini.css</span>
+        <a class="button col-sm col-md" href="https://github.com/Chalarangelo/mini.css" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 style="height: 20px; vertical-align: text-top;">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span>&nbsp;Github</span></a>
+        <a class="button col-sm col-md" href="flavors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 style="height: 20px; vertical-align: text-top;">
+                <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path>
+                <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>
+            </svg>
+            <span>&nbsp;Flavors</span></a>
+        <label for="doc-drawer-checkbox" class="button drawer-toggle col-sm"></label>
+    </header>
+
+    <div class="row">
+
+        <nav class="col-md-4 col-lg-3" id="nav-drawer">
+
+            <h3>Menu</h3>
+
+            <label for="doc-drawer-checkbox"
+                   class="button drawer-close"></label>
+
+            <div>
+                <input style="width: 100%; margin: 0px;" placeholder="Search..." type="search" id="search">
+            </div>
+            <a href="#getting-started" id="link-to-getting-started">Getting started</a>
+            <a href="#common-textual-elements" id="link-to-common-textual-elements">Common textual elements</a>
+
+
+        </nav>
+
+
+        <main class="col-sm-12 col-md-8 col-lg-9" id="doc-content">
+
+            <div id="getting-started" class="card fluid">
+                <h2 class="section double-padded">Getting started</h2>
+
+                <div class="section">
+
+
+                    <div id="container">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+<!-- 加载地图JSAPI脚本 -->
+<!--<script src="https://webapi.amap.com/maps?v=1.4.13&key=您申请的key值"></script>-->
+<!--<script>-->
+<!--var map = new AMap.Map('container', {-->
+<!--resizeEnable: true, //是否监控地图容器尺寸变化-->
+<!--zoom: 11, //初始化地图层级-->
+<!--center: [116.397428, 39.90923] //初始化地图中心点-->
+<!--});-->
+<!--</script>-->
+<script src="assets/js/main.min.js"></script>
+<script src="assets/js/lunr/lunr.min.js"></script>
+<script src="assets/js/lunr/lunr-store.js"></script>
+<script src="assets/js/lunr/lunr-en.js"></script>
+</body>
+</html>
